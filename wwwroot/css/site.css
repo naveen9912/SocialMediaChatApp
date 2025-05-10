@@ -1,0 +1,32 @@
+.chat-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.chat-messages {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+/* site.css */
+body {
+    background-color: #f8f9fa;
+}
+
+h1 span {
+    font-weight: bold;
+}

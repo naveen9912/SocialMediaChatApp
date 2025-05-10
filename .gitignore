@@ -1,0 +1,34 @@
+# Ignore build outputs
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+
+# User-specific files
+.vscode/
+*.user
+*.suo
+
+# ASP.NET Secrets
+secrets.json
+
+# .NET & Blazor
+*.db
+*.db-shm
+*.db-wal
+*.log
+wwwroot/js/signalr.min.js.map
+wwwroot/css/bootstrap.min.css.map
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Don't push large assets (adjust as needed)
+*.zip
+*.mp4
+*.mov
+*.avi
+*.iso

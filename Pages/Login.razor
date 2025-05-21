@@ -1,0 +1,26 @@
+@page "/login"
+@using SocialMediaChatApp.Models
+
+<h3>Login</h3>
+
+<EditForm Model="@LoginModel" OnValidSubmit="@HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label>Email</label>
+        <InputText class="form-control" @bind-Value="LoginModel.Email" />
+    </div>
+
+    <div class="mb-3">
+        <label>Password</label>
+        <InputText class="form-control" type="password" @bind-Value="LoginModel.Password" />
+    </div>
+
+    <div class="form-check mb-3">
+        <InputCheckbox class="form-check-input" @bind-Value="LoginModel.RememberMe" />
+        <label class="form-check-label">Remember me</label>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Login</button>
+</EditForm>
